@@ -1,0 +1,346 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#page {
+  position: relative;
+}
+.backgroundImage > img {
+  object-fit: cover;
+  width: 100%;
+  height: 45vh;
+}
+.btn-details {
+  padding: 5px 10px;
+  background-color: transparent;
+}
+.btn-details > a {
+  text-decoration: none;
+  color: #000;
+}
+.btn-details:hover {
+  padding: 7px 12px;
+  cursor: pointer;
+}
+.btn-read-more {
+  color: #fff;
+  padding: 5px;
+  background-color: #edaa2430;
+  border: 1px solid #fff;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.container .title {
+  font-weight: bold;
+}
+
+.destination-container {
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #edaa24;
+  color: #fff;
+  margin-top: 20px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  grid-template-rows: repeat(3, 300px);
+  grid-auto-rows: 300px;
+  grid-auto-columns: 300px;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px 50px;
+}
+
+.grid-item > img {
+  width: 100%;
+  height: 100%;
+}
+
+.header-paragraph {
+  text-align: center;
+}
+.icon {
+  flex-basis: 200px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.icon > img {
+  width: 50px;
+}
+.image-container {
+  position: relative;
+  width: 400px;
+  height: 600px;
+}
+.image-container > img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.logo {
+  width: 50px;
+  margin-left: 15px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 5px solid #edaa24;
+}
+.navBarList {
+  display: flex;
+  list-style-type: none;
+}
+.navBarList > li > a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #edaa24;
+}
+.page-titles {
+  text-transform: uppercase;
+  text-align: center;
+  color: #edaa24;
+}
+.photo-upload {
+  border-top: 3px solid #edaa24;
+  position: relative;
+}
+.photo-upload-gallery {
+  position: relative;
+}
+.photo-upload > img {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+}
+.photo-upload-gallery > img {
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+}
+
+.read-more {
+  font-style: italic;
+  margin-bottom: 50px;
+}
+.text-container {
+  position: absolute;
+  color: #fff;
+  top: 0;
+  margin-top: 50%;
+  left: 0;
+  right: 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: 200px;
+  text-align: center;
+}
+.upload {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  right: 25px;
+  bottom: 100px;
+}
+.upload > button {
+  width: 70px;
+  height: 70px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.upload > button > img {
+  object-fit: cover;
+  width: 100%;
+}
+.upload-photo-text {
+  width: 200px;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+}
+
+.upload-photo-text-gallery {
+  width: 300px;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  color: #fff;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  .icon {
+    flex-basis: 250px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .icon > img {
+    width: 50px;
+  }
+  .read-more {
+    border-bottom: 2px dotted #edaa24;
+  }
+  .destination-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .image-container {
+    flex: 1 1 600px;
+    margin: 20px 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .text-container {
+    position: absolute;
+    color: #fff;
+    width: 200px;
+    text-align: center;
+    top: 40%;
+    left: 0;
+    margin-top: auto;
+    margin-left: auto;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    grid-template-rows: repeat(4, 250px);
+    grid-auto-rows: 250px;
+    grid-auto-columns: 250px;
+    gap: 20px;
+    justify-content: space-around;
+    margin: 20px 70px 20px 70px;
+  }
+  .upload {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 25px;
+    bottom: 75px;
+  }
+  .footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 100px;
+    background-color: #edaa24;
+    color: #fff;
+  }
+}
+@media (max-width: 767px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: 5px solid #edaa24;
+  }
+  .navBarList {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+  }
+  .logo {
+    width: 50px;
+    margin-left: 25px;
+  }
+  .headerText {
+    margin: 0 50px;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  .icon {
+    flex-basis: 300px;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-right: 50px;
+  }
+  .icon > img {
+    width: 150px;
+  }
+  .read-more {
+    border-bottom: 2px dotted #edaa24;
+  }
+  .destination-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .image-container {
+    flex: 1 1 600px;
+    margin: 20px 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .text-container {
+    position: absolute;
+    color: #fff;
+    width: 200px;
+    text-align: center;
+    top: 40%;
+    left: 0;
+    margin-top: auto;
+    margin-left: auto;
+  }
+  .upload-photo-text-gallery {
+    width: 50%;
+    position: absolute;
+    top: 30px;
+    left: 25%;
+    color: #fff;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: minmax(250px, 400px);
+    gap: 30px;
+  }
+
+  .footer {
+    margin-top: 200px;
+  }
+  .upload {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right: 75px;
+    bottom: 75px;
+  }
+  .upload > button {
+    width: 100px;
+    height: 100px;
+    border: none;
+    background-color: transparent;
+  }
+  .upload > button > img {
+    object-fit: cover;
+    width: 100%;
+  }
+}
